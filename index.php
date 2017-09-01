@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title> Jared Long: Personal Website </title>
         <meta charset- "utf-8"/>
     </head>
     <body>
-        
-        <h1> Welcome to Jared's Website</h1>
+        <header>
+              <h1> Jared Long </h1>
+        </header>
+      
     </body>
 </html>
