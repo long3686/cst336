@@ -3,7 +3,6 @@
         margin: 0 auto; 
         text-align: center; 
     }
-    
     body {
         background-color: teal;
         color: black;
@@ -26,6 +25,7 @@
         font-size: 1.8em;
         color: white;
         text-decoration: none;
+        width: 50%;
     }
     
     nav a:hover, #current {  /*pseudo class*/
@@ -56,7 +56,7 @@
     }
     
     td strong {
-        color: orange;
+        color: black;
     }
     
     ul {
@@ -69,13 +69,18 @@
     }
     
     #table-header {
-        background-color: #351a00;
+        background-color: #55A787;
     }
     
     .table-row {
-        background-color: #753900;
+        background-color: #64C2B6;
     }
     
     .hobby {
-        color: yellow;
+        color: blue;
+    }
+    .con {
+        border: 0;
+        margin: 0;
+        text-align: center;
     }
