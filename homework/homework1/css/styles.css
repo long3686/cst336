@@ -1,0 +1,23 @@
+    header, footer , nav, #content{
+        text-align: center;
+        margin: 0px auto;
+        width: 960px;
+    }
+    body{
+        background-color: green;
+        color: black;
+    }
+     nav a {
+        padding:15px;
+        padding-bottom:4px;
+        font-size: 1.8em;
+        color: white;
+        text-decoration: none;
+        width: 50%;
+    }
+    
+    nav a:hover, #current {  /*pseudo class*/
+         border-bottom:2px blue solid;
+         font-size: 2em;
+         transition: .9s;
+    }

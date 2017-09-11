@@ -1,0 +1,9 @@
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+
+ #main {
+        font-family: 'Baloo Bhaina', cursive;
+        width:800px;
+        height:500px;
+        margin:0 auto;
+    }
