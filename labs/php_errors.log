@@ -1,3 +1,12 @@
 [08-Sep-2017 19:27:07 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 13
 [08-Sep-2017 19:31:08 UTC] PHP Parse error:  syntax error, unexpected '";"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 13
 [08-Sep-2017 19:31:08 UTC] PHP Parse error:  syntax error, unexpected '";"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 13
+[02-Oct-2017 02:43:57 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 74
+[02-Oct-2017 02:43:57 UTC] PHP Stack trace:
+[02-Oct-2017 02:43:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[02-Oct-2017 02:54:55 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 72
+[02-Oct-2017 02:54:55 UTC] PHP Stack trace:
+[02-Oct-2017 02:54:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[02-Oct-2017 03:40:17 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 83
+[02-Oct-2017 03:40:17 UTC] PHP Stack trace:
+[02-Oct-2017 03:40:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
