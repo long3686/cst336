@@ -1,21 +1,26 @@
-body
+form
 {
     color: black;
+    width:600px;
+    height:500px;
+    position:relative;
+    margin:0 auto;
+    font-size: 200%;
+    text-align: center;
 }
 
 h1
 {
     text-align: center;
 }
- #main 
- {
-    width:600px;
-    height:500px;
-    position:relative;
-    margin:0 auto;
-    color: black;
-    font-size: 200%;
+h2
+{
+    top:275px;
+    left:100px;
+    position: absolute;
+    width:300px;
     text-align: center;
+  
 }
 #creation
 {
