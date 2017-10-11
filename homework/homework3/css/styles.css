@@ -1,0 +1,26 @@
+body
+{
+    color: black;
+}
+
+h1
+{
+    text-align: center;
+}
+ #main 
+ {
+    width:600px;
+    height:500px;
+    position:relative;
+    margin:0 auto;
+    color: black;
+    font-size: 200%;
+    text-align: center;
+}
+#creation
+{
+    top:275px;
+    left:100px;
+    position: relative;
+    width:300px;
+}
