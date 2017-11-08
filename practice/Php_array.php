@@ -23,7 +23,7 @@
     }
     sort($symbols); //sorts elements in ascending order. rsort does descending order
     print_r($symbols);
-    //shuffle($symbols);
+    shuffle($symbols);
     echo "<hr>";
     print_r($symbols);
     echo "<hr>";
