@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Sorting Numbers</h1>
+        
+        Enter 3 Numbers from 1 to 50: <br><br>
+        
+        Number 1: <input type="number" id="myNumber1"><br>
+        Number 2: <input type="number" id="myNumber2"><br>
+        Number 3: <input type="number" id="myNumber3"><br>
+        
+        
+        <button onclick="numSort()">Sort!</button>
+        
+        <p id = "error"></p>
+        
+        <h2><p id="biggest"> The biggest number is: </p></h2>
+        
+        <p id="sorted"> The numbers in ascending order are: </p>
+        
+            <script>
+               
+                function numSort() 
+                {
+                    var firstNum = document.getElementById("myNumber1").value;
+                    var secondNum = document.getElementById("myNumber2").value;
+                    var thirdNum = document.getElementById("myNumber3").value;
+                   
+                    var list = [firstNum,secondNum,thirdNum];
+                    for(var i = 0; i<2;i++)
+                    {
+                         if(list[i] < 1)
+                        {
+                            document.getElementById("error").innerHTML = "Incorrect Input";
+                        }
+                        else if(list[i] > 50)
+                        {
+                            document.getElementById("error").innerHTML = "Incorrect Input";
+                        }
+                    }
+                    list.sort(function(a, b){return a-b});
+                    if(list[0]==list[1])
+                    {
+                        if(list[1]==list[2])
+                        {
+                            document.getElementById("error").innerHTML = "All numbers equal";
+                        }
+                    }
+                    document.getElementById("biggest").innerHTML = "The biggest number is: " + list[2];
+                    document.getElementById("sorted").innerHTML = "The numbers in ascedning ordre are: " + list;
+                }
+            
+            </script>
+    
+    </body>
+</html>
