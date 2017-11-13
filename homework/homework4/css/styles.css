@@ -1,0 +1,75 @@
+   @import url('https://fonts.googleapis.com/css?family=Work+Sans:600');
+   
+    img {
+        border-radius:20px;
+    }
+    
+    body {
+        background-color: black;
+        background-image:url("../img/chess.jpg");
+        
+    }
+    
+    #main {
+        font-family: 'Work Sans', sans-serif;
+        width:600px;
+        height:500px;
+        position:relative;
+        margin:0 auto;
+        color: green;
+        font-size: 200%;
+        text-align: center;
+    }
+    #fact{
+         font-family: 'Work Sans', sans-serif;
+         top:275px;
+         left:100px;
+         position: absolute;
+         width:300px;
+         color:white;
+         font-size: 200%;
+    }
+    #moveO
+    {
+        top:375px;
+        left:700px;
+        position:absolute;
+        font-size:1.3em;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:Black;
+        cursor:pointer;
+    }
+    #moveD
+    {
+        top:375px;
+        left:750px;
+        position:absolute;
+        font-size:1.3em;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:Black;
+        cursor:pointer;
+    }
+    #moveE
+    {
+        top:375px;
+        left:800px;
+        position:absolute;
+        font-size:1.3em;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:Black;
+        cursor:pointer;
+    }
+    input{
+        top:375px;
+        left:700px;
+        position:absolute;
+        font-size:1.3em;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:Black;
+        cursor:pointer;
+    }
+    
