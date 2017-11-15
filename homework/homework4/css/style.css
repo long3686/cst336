@@ -29,6 +29,15 @@
          color:white;
          font-size: 200%;
     }
+     #test{
+         font-family: 'Work Sans', sans-serif;
+         top:175px;
+         left:100px;
+         position: absolute;
+         width:300px;
+         color:white;
+         font-size: 200%;
+    }
     #hideshow{
          font-family: 'Work Sans', sans-serif;
          top:240px;
@@ -38,14 +47,24 @@
          color:white;
          font-size: 1.3em;
     }
-     input{
+    #move{
         top:375px;
-        left:700px;
+        right:90px;
         position:absolute;
-        font-size:1.3em;
+        font-size: 150%;
         outline:none; /*hides button outline when clicking on it*/
         font-weight:bold;
-        color:Black;
+        color:white;
+        cursor:pointer;
+    }
+    #play{
+        top:400px;
+        right:100px;
+        position:absolute;
+        font-size: 200%;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:black;
         cursor:pointer;
     }
     

@@ -83,3 +83,4 @@ document.getElementById("link").innerHTML = displayLink(index,value);
 var fact = ["Did you know the number of possible ways of playing the first four moves for both sides in a game of chess is 318,979,564,000 ?", " The longest chess game ever was I.Nikolic - Arsovic, Belgrade 1989, which ended in 269 moves. The game was a draw."," The longest game of chess that is theoretically possible is 5,949 moves.","A computer called DeepThought became the first computer to beat an international grandmaster in November 1988, Long Beach, California."];
 var factIndex = Math.floor((Math.random() * 4) );
 document.getElementById("fact").innerHTML = displayFact(fact,factIndex);
+
