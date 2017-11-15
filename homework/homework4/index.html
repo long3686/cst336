@@ -6,25 +6,34 @@
             @import url("css/styles.css");
         </style>
         <meta charset- "utf-8"/>
-        <script></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#fact").hide();
+            });
+            $("#show").click(function(){
+                $("#fact").show();
+            });
+        });
+        </script>
     </head>
     <body>
+        
         
         <div id= "main">
         <p id="board">Test</p> 
         <form>
-            <input type = "radio" id = "stren" name = "stat" value = "strength">
-            <label for "stren"></label><label for="stren"> Strength</label>
-            <input type = "radio" id = "speed" name = "stat" value = "speed" >
-            <label for = "speed"></label><label for = "speed"> Speed </label>
-            <input type = "radio" id = "intel" name = "stat" value = "intellect" >
-            <label for = "intel"></label><label for = "intel"> Intellect </label> <br>
             <input type="Submit" value="Play Again!"/>
         </form>
     
         <p id = "link"></p>
         </div>
-        <div id = "fact"></div>
+        <div id = "fact">
+             
+        </div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
         <script src="inc/functions.js">
         </script>
         <form>
