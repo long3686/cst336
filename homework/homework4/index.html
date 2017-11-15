@@ -16,6 +16,13 @@
                 $("#fact").show();
             });
         });
+        $(function(){
+        var x = 0;
+        setInterval(function(){
+            x-=1;
+            $('body').css('background-position', x + 'px 0');
+        }, 10);
+         })
         </script>
     </head>
     <body>
@@ -32,8 +39,8 @@
         <div id = "fact">
              
         </div>
-        <button id="hide">Hide</button>
-        <button id="show">Show</button>
+        <button id="hide">Hide Fact</button>
+        <button id="show">Show Fact</button>
         <script src="inc/functions.js">
         </script>
         <form>
