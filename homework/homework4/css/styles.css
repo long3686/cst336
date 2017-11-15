@@ -20,6 +20,25 @@
         font-size: 200%;
         text-align: center;
     }
+    #fact{
+         font-family: 'Work Sans', sans-serif;
+         top:275px;
+         left:100px;
+         position: absolute;
+         width:300px;
+         color:white;
+         font-size: 200%;
+    }
+     input{
+        top:375px;
+        left:700px;
+        position:absolute;
+        font-size:1.3em;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:Black;
+        cursor:pointer;
+    }
     
    
     
