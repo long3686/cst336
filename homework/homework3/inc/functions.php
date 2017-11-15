@@ -46,7 +46,7 @@
             elseif($statChoice == "intellect")
                 echo "Cleric";
         }
-    }
+    
     function getAlignment($charGB,$charLC)
     {
         if($charGB == "good")
