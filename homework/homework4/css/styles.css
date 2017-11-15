@@ -29,6 +29,24 @@
          color:white;
          font-size: 200%;
     }
+    #hide{
+         font-family: 'Work Sans', sans-serif;
+         top:275px;
+         left:100px;
+         position: absolute;
+         width:300px;
+         color:white;
+         font-size: 200%;
+    }
+    #show{
+         font-family: 'Work Sans', sans-serif;
+         top:275px;
+         left:100px;
+         position: absolute;
+         width:300px;
+         color:white;
+         font-size: 200%;
+    }
      input{
         top:375px;
         left:700px;
