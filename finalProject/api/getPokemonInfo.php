@@ -1,7 +1,7 @@
 <?php
 
     include '../../../dbConnection.php';
-    $dbConn = getDatabaseConnection();    
+    $dbConn = getDatabaseConnection(); 
     $sql = "SELECT * 
     FROM pokemon p 
     INNER JOIN type t on p.type1Id = t.typeId 
