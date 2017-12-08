@@ -22,5 +22,9 @@ if (isset($_POST['loginForm'])) {  //login form has been submitted
         </script>"; 
     }
 }
-//endIf loginForm was submitted
+if(isset ($_POST['username']))
+{
+    echo ($_POST['username']);
+    
+}//endIf loginForm was submitted
 ?>
