@@ -46,3 +46,9 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/finalProject/admin.php(28): include('/home/ubuntu/wo...')
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/finalProject/login.php on line 12
+[08-Dec-2017 10:38:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pokemon.pokemon' doesn't exist' in /home/ubuntu/workspace/cst336/finalProject/deletePokemon.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/deletePokemon.php(19): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/finalProject/deletePokemon.php(47): getPokemonInfo('1')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/deletePokemon.php on line 19

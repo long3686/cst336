@@ -21,5 +21,7 @@ if (isset($_POST['loginForm'])) {  //login form has been submitted
         alert('Incorrect Username or Password')
         </script>"; 
     }
-} //endIf loginForm was submitted
+}
+else{echo "wtf bro";
+    }//endIf loginForm was submitted
 ?>
