@@ -1,6 +1,6 @@
 <?php
 session_start();
-//print_r($_POST);
+session_destroy();
 
 include '../../dbConnection.php';
 $conn = getDatabaseConnection();

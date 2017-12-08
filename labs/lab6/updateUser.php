@@ -24,11 +24,33 @@ function getDepartmentInfo(){
 }
 
 function getUserInfo($userId) {
-    
+    global $conn;    
     $sql = "SELECT * 
-            "
+            FROM tc_user
+            WHERE userId = $userId";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $record = $stmt->fetch();
+    //print_r($record);
+    return $record;
+}
+
+if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
+    
+    $sql = "UPDATE tc_user
+            SET firstName = :fName,
+                lastName = :lName
+			WHERE userId = :userId";
+	$namedParameters = array();
+	$namedParameters[":fName"] = $_GET['firstName'];
+	$namedParameters[":lName"] = $_GET['lastName'];
+	$namedParameters[":userId"] = $_GET['userId'];
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($namedParameters);
     
 }
+
+
 
 if (isset($_GET['userId'])) {
     
@@ -57,12 +79,13 @@ if (isset($_GET['userId'])) {
         
         <form>
             
-            First Name: <input type="text" name="firstName" required /> <br>
-            Last Name: <input type="text" name="lastName" required/> <br>
+            <input type="hidden" name="userId" value="<?=$userInfo['userId']?>" />
+            First Name: <input type="text" name="firstName" required value="<?=$userInfo['firstName']?>" /> <br>
+            Last Name: <input type="text" name="lastName" required value="<?=$userInfo['lastName']?>"/> <br>
             Email: <input type="text" name="email"/> <br>
             University Id: <input type="text" name="universityId"/> <br>
             Phone: <input type="text" name="phone"/> <br>
-            Gender: <input type="radio" name="gender" value="F" id="genderF" required/> 
+            Gender: <input type="radio" name="gender" value="F" id="genderF"  <?=($userInfo['gender']=='F')?"checked":"" ?> required/> 
                     <label for="genderF">Female</label>
                     <input type="radio" name="gender" value="M" id="genderM"  required/> 
                     <label for="genderM">Male</label><br>
