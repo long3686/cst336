@@ -1,5 +1,5 @@
 <?php
-    function getDatabaseConnection($dbname = 'tcp'){
+    function getDatabaseConnection($dbname = 'pokemon'){
     
     $host = 'localhost';//cloud 9
     // $dbname = 'tcp';
