@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])){
     
 }
 
- include("../../dbConnection.php");
+ include("../dbConnection.php");
  $conn = getDatabaseConnection();
 
 
@@ -21,7 +21,7 @@ if (isset($_GET['addPokemonForm'])){
     $evolution1   = $_GET['evolution1'];
     $evolution2   = $_GET['evolution2'];
     
-    $sql = "INSERT INTO pokemon
+    $sql = "INSERT INTO Pokemon
             (pokemonName, type1Id, type2Id, preEvolution1Id, preEvolution2Id, evolution1Id, evolution2Id)
             VALUES
             (:pokemonName, :type1, :type2, :preEvolution1, :preEvolution2, :evolution1, :evolution2)";

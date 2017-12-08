@@ -7,13 +7,13 @@ if (!isset($_SESSION['username'])){
     
 }
 
- include("../../dbConnection.php");
+ include("../dbConnection.php");
  $conn = getDatabaseConnection();
 
 function getPokemonInfo($pokemonId) {
     global $conn;    
     $sql = "SELECT * 
-            FROM pokemon
+            FROM Pokemon
             WHERE pokemonId = $pokemonId";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -33,7 +33,7 @@ if (isset($_GET['addPokemonForm'])){
     $evolution1 = $_GET['evolution1'];
     $evolution2 = $_GET['evolution2'];
     
-    $sql = "UPDATE pokemon
+    $sql = "UPDATE Pokemon
             SET
             pokemonName = :pokemonName,
             type1Id = :type1,
