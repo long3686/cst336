@@ -1,6 +1,15 @@
 <?php
 session_start();
 
+if(isset ($_POST['username']))
+{
+    echo ($_POST['username']);
+    
+}
+else
+{
+    echo "my code is dumb";
+}
 if (isset($_POST['loginForm'])) {  //login form has been submitted
     include '../../dbConnection.php';
     $dbConn = getDatabaseConnection();    
@@ -21,10 +30,5 @@ if (isset($_POST['loginForm'])) {  //login form has been submitted
         alert('Incorrect Username or Password')
         </script>"; 
     }
-}
-if(isset ($_POST['username']))
-{
-    echo ($_POST['username']);
-    
 }//endIf loginForm was submitted
 ?>
