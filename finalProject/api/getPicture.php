@@ -1,9 +1,9 @@
 <?php
 
-    include '../../../dbConnection.php';
+    include '../../dbConnection.php';
     $dbConn = getDatabaseConnection();    
     $sql = "SELECT pokemonName 
-    FROM pokemon  
+    FROM Pokemon  
     WHERE pokemonId = :id";
     $stmt = $dbConn -> prepare($sql);
     $stmt -> execute(array("id"=>$_GET['id']));

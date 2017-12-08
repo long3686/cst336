@@ -1,6 +1,6 @@
 <?php
 
-    include '../../../dbConnection.php';
+    include '../../dbConnection.php';
     $dbConn = getDatabaseConnection(); 
     $sql = "SELECT * 
     FROM Pokemon p 

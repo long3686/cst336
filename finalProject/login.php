@@ -10,7 +10,7 @@ if (isset($_POST['loginForm'])) {  //login form has been submitted
     $stmt = $dbConn->prepare($sql);
     $stmt->execute( array (":username" => $_POST['username'],
 		        ":password" => hash("sha1",$_POST['password'])));
-    $record = $stmt->fetch();
+    $record = $stmt->fetch(PDO::FETCH_ASSOC);
 
   if (!empty($record)) { //if record with username and password was found
         $_SESSION['username'] = $record['username'];
