@@ -11,7 +11,7 @@ else
     echo "my code is dumb";
 }
 if (isset($_POST['loginForm'])) {  //login form has been submitted
-    include '../../dbConnection.php';
+    include '../dbConnection.php';
     echo "no wait it is here";
     $dbConn = getDatabaseConnection();    
     echo "here perhaps?";
