@@ -1,7 +1,7 @@
 <?php
 
     include '../../../dbConnection.php';
-    $dbConn = getDatabaseConnection("pokemon");    
+    $dbConn = getDatabaseConnection();    
     $sql = "SELECT pokemonName 
     FROM pokemon  
     WHERE pokemonId = :id";

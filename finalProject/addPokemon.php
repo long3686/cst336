@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])){
 }
 
  include("../../dbConnection.php");
- $conn = getDatabaseConnection("pokemon");
+ $conn = getDatabaseConnection();
 
 
 if (isset($_GET['addPokemonForm'])){

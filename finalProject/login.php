@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_POST['loginForm'])) {  //login form has been submitted
     include '../../dbConnection.php';
-    $dbConn = getDatabaseConnection("pokemon");    
+    $dbConn = getDatabaseConnection();    
      $sql = "SELECT * FROM admin " .
             " WHERE username = :username " .
              "AND password = :password  ";
